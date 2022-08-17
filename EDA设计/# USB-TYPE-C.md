@@ -14,7 +14,7 @@
 
 ---
 
-![24p 母头](https://img-blog.csdnimg.cn/img_convert/3f8e5b5c01fbf93cfdb2deb986b41add.png)
+![24p 母头](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/24p_母头.png)
 
 <br><br>
 
@@ -24,7 +24,7 @@
 
 ---
 
-![24p 公头](https://img-blog.csdnimg.cn/img_convert/74e75282a1f97a554812804d4d3e6adb.png)
+![24p 公头](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/24p_公头.png)
 
 <br><br>
 
@@ -35,7 +35,7 @@
 
 ### **引脚功能分布**
 
-![24p 公头](https://img-blog.csdnimg.cn/img_convert/25b69d5c451bf687cc4cf11382d0a8f3.png)
+![24p 公头](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/引脚功能分布.png)
 
 ---
 ---
@@ -72,7 +72,7 @@ A12 | GND | 接地 | B1 | GND | 接地
 
 ### **16p_引脚定义**
 
-![16p_引脚定义](https://img-blog.csdnimg.cn/img_convert/76eb93d1b65132fe172c489658e94258.png)
+![16p_引脚定义](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/16p_引脚定义.png)
 
 ---
 ---
@@ -82,7 +82,7 @@ A12 | GND | 接地 | B1 | GND | 接地
 
 ### **16p_封装**
 
-![16p_封装](https://img-blog.csdnimg.cn/img_convert/35d2ab19a5e4f62424cdb6dba48958c1.png)
+![16p_封装](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/16p_封装.png)
 
 ## **6P TYPE-C**
 
@@ -95,11 +95,11 @@ A12 | GND | 接地 | B1 | GND | 接地
 
 ### **6p_母头**
 
-![6p_母头](https://img-blog.csdnimg.cn/img_convert/01bb276a77567a45a334ed3341a0cbbe.png)
+![6p_母头](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/6p_母头.png)
 
 ### **6p_封装**
 
-![6p_封装](https://img-blog.csdnimg.cn/img_convert/52e43f959005e6dc06a33d76186ecf57.png)
+![6p_封装](https://gitee.com/Sentaku1129/images/raw/master/EDA设计/Type-C/6p_封装.png)
 
 ---
 ---
