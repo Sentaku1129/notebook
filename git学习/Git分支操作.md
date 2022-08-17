@@ -42,6 +42,6 @@
     * master
       test
     $ git branch -d test
-    Deleted branch testing (was )
+    Deleted branch testing (was f26dc40)
     $ git branch
     * master
