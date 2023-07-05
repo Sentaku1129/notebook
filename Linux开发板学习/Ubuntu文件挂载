@@ -1,0 +1,45 @@
+# Ubuntu文件挂载
+
+> 在使用Linux时，经常需要对一些文件进行编辑，但是我们又习惯于使用Windows，这时我们可以将Windows上的文件夹共享给Linux系统
+
+## 共享Windows文件夹
+
+如下图所示，我们需要将想要共享的文件夹进行勾选。
+
+![Windows共享文件夹](https://github.com/Sentaku1129/images/raw/master/Linux开发板学习/Ubuntu文件挂载/Windows共享文件夹.png)
+
+## VMware设置
+
+需要按照下图依次对所要挂载的虚拟机进行设置
+
+![vmware设置1](https://github.com/Sentaku1129/images/raw/master/Linux开发板学习/Ubuntu文件挂载/vmware虚拟机设置1.png)
+
+其中主机路径是你上一步共享的Windows文件夹,名称是后面挂载所要用到的(也可以看成是一个磁盘名称)
+
+设置完成之后大致如下图所示
+
+![vmware设置2](https://github.com/Sentaku1129/images/raw/master/Linux开发板学习/Ubuntu文件挂载/vmware虚拟机设置2.png)
+
+然后进入到Linux系统中输入下面的的命令
+
+```bash
+# 创建Linux内挂载点的文件夹
+mkdir /mnt/hgfs
+# 单独挂载
+sudo vmhgfs-fuse .host:/名称 /mnt/hgfs -o allow_other
+# 全部挂载
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
+```
+
+其中'-o allow_other' 是用户访问权限的设置
+
+## 自动挂载
+
+上面的虽然挂载成功了,但是每次我们重新将虚拟机启动后,会让我们重新去挂载文件夹,我们可以通过下面的方式让系统启动自动挂载
+
+```bash
+sudo vim  /etc/fstab
+# 输入在文本中输入以下格式的挂载挂载语句
+# <file system> <mount point> <type> <options> <dump> <pass>
+.host:/名称 /mnt/hgfs fuse.vmhgfs-fuse allow_other 0 0
+```
